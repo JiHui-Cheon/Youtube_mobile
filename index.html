@@ -1,78 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Youtube Mobile</title>
-    <script
-        src = "https://kit.fontawesome.com/2d323a629b.js"
-        crossorigin="anonymous"
-    ></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="logo"></div>
-            <i class = "fab fa-youtube"></i>
-            <span class="title">Youtube</span>
-        <div class="icons">
-            <i class = "fas fa-serch"></i>
-            <i class = "fas fa-ellipsis-v"></i>
-        </div>
-    </header>
-
-    <!-- Video Player -->
-    <section class="player">
-        <video controls src="video/video_0.MOV"></video>
-    </section>
-
-    <!-- Video info -->
-    <section class="info">
-        <!-- Metadata -->
-        <div class="metadata">
-            <ul class="hashtags">
-                <li>#Jihui</li>
-                <li>#King</li>
-                <li>#Zzang</li>
-            </ul>
-            <div class="titleAndbutton">
-                <span class="title">
-                    유튜브 사이트 따라만들기, 지희의 클론코딩 도전!!
-                </span>
-                <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link 
+            rel="stylesheet" 
+            href="https://fonts.googleapis.com/css?family=Roboto&display=swap" 
+            />
+        <link rel="stylesheet" href="style.css">
+        <title>Youtube Mobile</title>
+        <script
+            src = "https://kit.fontawesome.com/2d323a629b.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <i class = "fab fa-youtube"></i>
+                <span class="title">Youtube</span>
             </div>
-            <div class="views">
+            <div class="icons">
+                <i class = "fas fa-search"></i>
+                <i class = "fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+
+        <!-- Video Player -->
+        <section class="player">
+            <video controls src="video/video_0.MOV"></video>
+        </section>
+
+        <div class="infoAndUpNext">
+            <!-- Video info -->
+        <section class="info">
+            <!-- Metadata -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#Jihui</li>
+                    <li>#King</li>
+                    <li>#Zzang</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">
+                        지희의 해외여행 IN UK / 맨체스터유나이티드 VS 뉴캐슬 | 영국에서 느끼는 프리미어리그!! 그 생생한 현장속으로!! | 짜릿한 득점뒤 환호하는 팬들! | 코로나 이전 평범하지만 특별했던 순간들
+                    </span>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </div>
                 <span class="views">1M views 1 month ago</span>
             </div>
-        </div>
-        <div class="actions">
-            <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
-            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
-            <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
-            <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
-            <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
-        </div>
-        <div class="channel">
-            <div class="metadata">
-                <img src="image/unnamed.jpg" alt="" />
-                <div class="info">
-                    <span class="name">클론코딩 by 지희</span>
-                    <span class="subscribers">1M subscribers</span></div>
+            <ul class="actions">
+                <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
+                <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+                <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+                <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+            </ul>
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/main.jpg" alt="" />
+                    <div class="info">
+                        <span class="name">클론코딩 by 지희</span>
+                        <span class="subscribers">1M subscribers</span></div>
+                </div>
+                <button class="subscribe">subscribe</div>
             </div>
-            <button class="subscribe">subscribe</div>
+        </section>
+
+        <!-- Up Next -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <li class="item">
+                <div class="img"><img src="image/coding1.jpg" alt="" /></div>
+                <div class="info">
+                    <span class="title">지희와 함께하는 코딩 입문하기 | 야 너두 할 수 있어! | 아무것도 몰라도 정말정말 괜찮아</span>
+                    <span class="name">클론코딩 by 지희</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>           
+            </li>
+            <li class="item">
+                <div class="img"><img src="image/coding2.jpg" alt="" /></div>
+                <div class="info">
+                    <span class="title">지희와 함께하는 코딩실력 레벨업 | 자 이제 시작이야! | 백문이 불여일타니라 </span>
+                    <span class="name">클론코딩 by 지희</span>
+                    <span class="views">86K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="image/coding3.jpg" alt="" /></div>
+                <div class="info">
+                    <span class="title">지희와 함께하는 코딩 고급과정 | 포기하지마! 가즈아! | 여기까지 오느라 수고했어~ 칭찬해~</span>
+                    <span class="name">클론코딩 by 지희</span>
+                    <span class="views">92K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </section>
         </div>
-    </section>
-    <section class="UpNext">
-        <span class="title">Up next</span>
-        <li class="item">
-            <img src="" alt="">
-            <div class="info"></div>
-            <button class="moreBtn"></button>
-        </li>
-        <li class="item"></li>
-        <li class="item"></li>
-    </section>
-</body>
+    </body>
 </html>
